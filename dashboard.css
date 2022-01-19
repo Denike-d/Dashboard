@@ -42,6 +42,9 @@ body{
   padding-top: 5px;
   color: white;
 }
+hr{
+  margin-top: 10px;
+}
 section{
 	width: calc(100% - 210px);
 	margin-left: 210px;
@@ -199,15 +202,6 @@ input[type=text]:focus {
 
 }
 
-/*.wave{
-  width: 280px;
-  height: 91px;
-  position: relative;
-  top: 50px;
-  border-radius: 0 500px 30px 110px; 
-  background-color: rgba(49, 49, 49, 0.959);
-}*/
-
 /*Content on the right side*/
 .flex-right{
   margin-left: 15px;
@@ -354,50 +348,7 @@ input[type=text]:focus {
 .status{
   margin-left: 450px;
 }
-/*.icon {
- display: inline-block;
- font-size: 35px;
- color: #ffC977;
- vertical-align: middle;
-}
-.change{
-    color:rgb(62, 62, 241);
-    padding: 10px 10px;
-}
-.annual{
-    padding-left: 0px;
-    padding-right: 120px;
-    font-size: 14px;
-}
-.text{
-  display: inline-block;
-  vertical-align: middle;
 
-}
-
-
-.container{
-	margin: 30px;
-	background: #fff;
-	padding: 50px;
-	line-height: 28px;
-}
-input[type="text"] {
-    background-color: white;
-    border: none;
-    border-radius: 15px;
-    font-size: 12px;
-    display: inline-block;
-    padding: 13px ;
-    width: 70%;
-}
-
-
-
-.user-field a{
-    display: inline-block;
-    
-}*/
 /* MEDIA QUERIES*/
    
 @media screen and (max-width: 1200px){
@@ -417,7 +368,6 @@ input[type="text"] {
   section .header{
     display: flex;
     justify-content: space-between;
-    height: 100px;
   }
   input[type="text"] {
     font-size: 12px;
@@ -452,14 +402,27 @@ input[type="text"] {
  .status{
    margin-left: auto;
   }
-  section.header{
-    display: inline-block;
+  
+}
+
+/*MEDIA QUERIES FOR SMALL SCREEN SIZE*/
+@media screen and (max-width: 768px){
+  section .header{
+    display: block;
+    margin-bottom: 40px;
   }
   .btn{
-    margin-left: 70px;
-    padding: 20px 40px;
+    float: right;
+    margin-top: 20px;
   }
   .search-bar{
-    margin-left: 70px;
+    display: block;
+    float: left;
+    margin-top: 20px;
   }
+  hr{
+    width: 768px;
+    margin-top: 40px;
+  }
+  
 }
