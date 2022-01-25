@@ -10,4 +10,4 @@ This dashboard represents the expenses of an individual based on the day, month 
 - Flexbox
 
 #### Live view
-https://vimeo.com/667726639/1bc00dfd93
+![](dashboard.mp4)
